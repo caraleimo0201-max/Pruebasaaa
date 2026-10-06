@@ -1,1 +1,15 @@
 
+<script>
+    
+    // Función para obtener el valor de un parámetro de la URL
+    function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    // Obtener el valor del parámetro "nombre" de la URL
+    const nombre = getQueryParam('nombre');
+
+    // Mostrar el valor en la consola
+    console.log('Valor del parámetro "nombre":', nombre);
+</script>
